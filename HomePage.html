@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home Page</title>
+    <style>
+        body, html {
+            background-color: black;
+        }
+
+        .button {
+            background-color: black;
+            border: hidden;
+            color: lightyellow;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            transition-duration: 0.4s;
+            display: block;
+        }
+
+            .button:hover {
+                text-decoration: underline;
+            }
+
+        .block-display button {
+            display: block;
+            justify-content: right;
+        }
+
+        .centerElement {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Side Columns */
+        .column1 {
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+
+        /* Content Columns */
+        .column2 {
+            float: left;
+            width: 45%;
+            padding: 5px;
+        }
+
+        .element {
+            position: fixed;
+            float: right;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style='background: #000; color:lightgray'>
+
+    <form id="form1" runat="server">
+        <div class="row">
+            <!--Navigation Panel-->
+            <div class="column1">
+                <div class="block-display" style="float:right; position:fixed; left:350px;">
+                    <a href="#aboutme" style="color:antiquewhite"> About Me </a>
+                    <br />
+                    <br />
+                    <a href="#techskills" style="color:antiquewhite"> Technical Skill </a>
+                    <br />
+                    <br />
+                    <a href="#employment" style="color:antiquewhite"> Employment </a>
+                    <br />
+                    <br />
+                    <a href="#projects" style="color:antiquewhite"> Projects </a>
+                </div>
+            </div>
+            <div class="column2" style="border-left: 1px solid antiquewhite">
+                <asp:Panel ID="Heading" runat="server">
+                    <h1 class="centerElement" style="font-size: 45px">Quan Trung Nghiem</h1>
+                </asp:Panel>
+                <div class="block-display">
+                    <div class="w3-container">
+                        <h2 id="aboutme" style="font-size: 30px">About Me</h2>
+                        <p style="font-size: 17px">
+                            I am a new graduated with a Bachelor's Degree in Computer Science and Software Engineering from University of Washignton Bothell. My current interests are database
+                            development and game development, specifically in developing SQL and NoSQL databases for applications, creating an RPG game, and designing collaborative virtual
+                            environment that support solving real world issues.
+                        </p>
+                    </div>
+
+                    <div class="w3-container">
+                        <h2 id="techskill" style="font-size: 30px">Technical Skill</h2>
+                        <h3 style="font-size: 23px">Coding Language</h3>
+                        <p style="font-size: 17px">
+                            Proficient: C#, Java, SQL, NoSQL, HTML/CSS <br />
+                            Familiar: C++, Python, Javascript, Dart
+                        </p>
+                        <h3 style="font-size: 23px">Software/Platform</h3>
+                        <p style="font-size: 17px">
+                            Proficient: Unity Game Engine, Azure Cloud Service, Visual Studio, Windows, Android <br />
+                            Familiar: Amazon Web Service, Android Studio, Git, Linux
+                        </p>
+                        <h3 style="font-size: 23px">Framework</h3>
+                        <p style="font-size: 17px">
+                            .Net Framework, Flutter framework, Oculus framework
+                        </p>
+                    </div>
+
+
+                    <div class="w3-container">
+                        <h2 id="employment" style="font-size: 30px">Employments</h2>
+                        <h3 style="font-size: 23px">Teaching Assistant/Grader <br /> University of Washington Bothell (01/06/2020 - 06/15/2020)</h3>
+                        <p style="font-size: 17px">
+                            <ul>
+                                <li>
+                                    Improved students learning by providing aids and feedbacks on their Database projects programmed in SQL and C# in Visual Studio and Azure MySQL.
+                                </li>
+                                <li>
+                                    Improved students learning by providing feedbacks on their Game projects programmed in C# using Unity Engine.
+                                </li>
+                                <li>
+                                    Improved efficientcy in grading SQL scritps by developing a SQL auto compiling application programmed in C# using Visual Studio and .Net Framework.
+                                </li>
+                            </ul>
+                        </p>
+                        <h3 style="font-size: 23px">Computer Science Instructor <br /> Pacific Science Center (06/15/2019 - 08/31/2019)</h3>
+                        <p style="font-size: 17px">
+                            <ul>
+                                <li>
+                                    Taught fundamental Java coding concepts by building games in BlueJ.
+                                </li>
+                                <li>
+                                    Taught fundamental C# coding concepts by buidling Virtual Reality Game in Unity Engine for HTC Vive and Acer Window Reality Mixed headsets.
+                                </li>
+                            </ul>
+                        </p>
+                        <h3 style="font-size: 23px">Unity Game Developer <br /> University of Washington Bothell (04/01/2020 - 06/15/2020)</h3>
+                        <p style="font-size: 17px">
+                            <ul>
+                                <li>
+                                    Utilized Unity Engine to develop a Virtual Reality physic simulator for the Engineering Department.
+                                </li>
+                                <li>
+                                    Integrated complex engineering concepts by creating a physics library add-on for Unity Physics system.
+                                </li>
+                                <li>
+                                    Increased engineering problems variant by developing an engineering problems generator programmed in C#.
+                                </li>
+                                <li>
+                                    Leveraged knowledge in Unity Cloud, programmed in C# using Visual Studio, full stack application development, and debugged using Oculus Quest.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="w3-container">
+                        <h2 id="projects" style="font-size: 30px">Projects</h2>
+                        <p style="font-size: 17px">
+                            <a href="" style="color:azure">Visit my projects page!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="w3-container" style="float:right">
+                    <h2 style="font-size: 30px">Contact Info</h2>
+                    <p style="font-size: 17px">
+                        Phone: <a href="tel:2066431758" style="color:azure">206.643.1758</a>
+                        <br />
+                        Email: <a href="mailto:quan.nghiem2904@gmail.com?cc=quan117@uw.edu" style="color:azure">quan.nghiem2904@gmail.com</a>
+                        <br />
+                        Linkedin: <a href="https://www.linkedin.com/in/quannghiem/" target="_blank" style="color:azure">linkedin.com/in/quannghiem/</a>
+                        <br />
+                        Github: <a href="https://www.github.com/QuanNghiem/" target="_blank" style="color:azure">github.com/QuanNghiem</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
