@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Projects</title>
+    <style>
+        body, html {
+            background-color: #202020;
+        }
+
+        .button {
+            background-color: black;
+            border: hidden;
+            color: lightyellow;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            transition-duration: 0.4s;
+            display: block;
+        }
+
+            .button:hover {
+                text-decoration: underline;
+            }
+
+        .block-display button {
+            display: block;
+            justify-content: right;
+        }
+
+        .centerElement {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Side Columns */
+        .column1 {
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+
+        /* Content Columns */
+        .column2 {
+            float: left;
+            width: 45%;
+            padding: 5px;
+        }
+
+        .element {
+            position: fixed;
+            float: right;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style='background: #000; color:lightgray'>
+
+    <form id="form1" runat="server">
+        <div class="row">
+            <!--Navigation Panel-->
+            <div class="column1">
+                <div class="block-display" style="position:fixed; font-size:20px;">
+                    <h2 style="font-size: 30px">Contents</h2>
+                    <a href="index.html" style="color:azure"> Back to Home </a>
+                    <br />
+                    <br />
+                    <a href="#Heading" style="color:azure"> Projects </a>
+                    <ul>
+                        <li>
+                            <a href="#VREE" style="color:azure"> VR Engineering Education </a>
+                        </li>
+                        <li>
+                            <a href="#Domaine" style="color:azure"> Domaine </a>
+                        </li>
+                        <li>
+                            <a href="#Shifter" style="color:azure"> Shifter </a>
+                        </li>
+                        <li>
+                            <a href="#Collabware" style="color:azure"> Collabware </a>
+                        </li>
+                        <li>
+                            <a href="#PersonalWebsite" style="color:azure"> Personal Website </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column2" style="border-left: 1px solid antiquewhite; border-right: 1px solid antiquewhite;">
+                <asp:Panel ID="Heading" runat="server">
+                    <h1 class="centerElement" style="font-size: 45px">Quan Trung Nghiem</h1>
+                </asp:Panel>
+                <div class="block-display">
+                    <div class="w3-container" style="border: 1px solid antiquewhite;">
+                        <h2 id="VREE" style="font-size: 30px; text-align: center;">
+                            VR Engineering Education <br />
+                        </h2>
+                        <p style="font-size: 25px; text-align: center;">Unity Application</p>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="https://raw.githubusercontent.com/QuanNghiem/PersonalWebsite/500ca309523fbe0fe206890f55d9fc101fb37b41/logo_cat.svg"
+                                 alt="VREE Logo" style="height:40%; width:40%;  filter: invert(100%);" />
+                        </div>
+                        <h3 style="font-size: 23px">Description:</h3>
+                        <p style="font-size: 17px">
+                            VR Engineering Education is an application that replaces the need for buying and storing physical models by replicating said models
+                            within the virtual space. The application is tailored for engineering students, with the hope that by interacting with physics concepts
+                            and simulations, there would be an improvement in students' problems solving skills and understanding of physics in 3D space.
+                        </p>
+                        <img src="https://github.com/QuanNghiem/PersonalWebsite/blob/master/DemoRamp.gif?raw=true"
+                             alt="DemoRamp" style="height: 100%; width: 100%; object-fit: cover" />
+
+                        <div style="display: flex; justify-content: center;">
+                            <a href="https://github.com/CSLagomorph/VR-ENGR-EDU" target="_blank" style="color:azure; font-size:30px;">Github Link</a>
+                        </div>
+
+                        <h3 style="font-size: 23px">Technolgy Used:</h3>
+                        <p style="font-size: 17px">
+                            Unity Engine, Oculus Platform, SteamVR, C#, Blender, Unity Cloud.
+                        </p>
+                    </div>
+                    <br />
+
+                    <div class="w3-container" style="border: 1px solid antiquewhite;">
+                        <h2 id="Domaine" style="font-size: 30px; text-align: center;">
+                            Domaine <br />
+                        </h2>
+                        <p style="font-size: 25px; text-align: center;">ASP.Net Web Application</p>
+                        <h3 style="font-size: 23px">Description:</h3>
+                        <p style="font-size: 17px">
+                            Domaine is a music website that implemented Azure Cloud Storage, Youtube API, and Apple Music API to search for albums and lyrics, and
+                            construct a playlist based on users' inputs in the form of .txt file or video url. Don't ask us about the name, we still haven't figured out
+                            why we named it that.
+                        </p>
+
+                        <div style="display: flex; justify-content: center;">
+                            <a href="https://domainemaas.azurewebsites.net" target="_blank" style="color:azure; font-size:30px;">Visit Domaine!</a>
+                        </div>
+
+                        <h3 style="font-size: 23px">Technolgy Used:</h3>
+                        <p style="font-size: 17px">
+                            HTML5, .Net Framework, ASP.Net Web Form, Javascript, C#, Azure Blob Storage, Azure Table Storage, Youtube API, Apple Music API, NoSQL.
+                        </p>
+                    </div>
+                    <br />
+
+                    <div class="w3-container" style="border: 1px solid antiquewhite;">
+                        <h2 id="Shifter" style="font-size: 30px; text-align: center;">
+                            Shifter <br />
+                        </h2>
+                        <p style="font-size: 25px; text-align: center;">Unity Game</p>
+                        <h3 style="font-size: 23px; text-align: center;">Trailer:</h3>
+                        <div style="display: flex; justify-content: center;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/h_T1DOfA3Ms" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 style="font-size: 23px">Description:</h3>
+                        <p style="font-size: 17px">
+                            Battling robots and asteroids in the orbit of a deserted planet. Fight through waves of enemies to get back to Earth. Shifter is a game
+                            with the typical plot you see in most space arcade game. However, the player can switch from 2D to 3D to overcome obstacles. What inspired
+                            us to create that mechanic you ask? Absolute sheer boredom ... and a desire to learn more about camera and perspective manipulation in Unity.
+                        </p>
+                        <div style="display: flex; justify-content: center;">
+                            <a href="https://i.simmer.io/@Trikster/shifter" target="_blank" style="color:azure; font-size:30px;">Play Shifter!</a>
+                        </div>
+
+                        <h3 style="font-size: 23px">Technolgy Used:</h3>
+                        <p style="font-size: 17px">
+                            Unity Engine, C#, Github, Blender.
+                        </p>
+                    </div>
+                    <br />
+
+                    <div class="w3-container" style="border: 1px solid antiquewhite;">
+                        <h2 id="Collabware" style="font-size: 30px; text-align: center;">
+                            Collabware <br />
+                        </h2>
+                        <p style="font-size: 25px; text-align: center;">Android Application</p>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="https://camo.githubusercontent.com/2247a2754fc6fce8d1f9b3b10aec2c028a90aad8/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3638343137353530323334303339303936332f3730313532303935323334393033323536382f62636535393236322d646233622d346132622d626630622d6164653237366662616336645f323030783230302e706e67"
+                                 alt="Collabware Logo" style="height:40%; width:40%;" />
+                        </div>
+                        <h3 style="font-size: 23px">Description:</h3>
+                        <p style="font-size: 17px">
+                            CollabWare is a mobile app that has tinder-like functionality; you can press the heart button to connect with them,
+                            or x if you want to move on to the next person. However, instead of dating, the intention of this app is for software project ideas.
+                            A developer can input their idea in the bottom, as well as the languages that they are proficient in.
+                            If you press the heart button, they will show up in the chat page, and you can contact them to discuss about collaboration.
+                            Otherwise, if you click x, the app will show the next developer and their idea.
+                        </p>
+                        <img src="https://camo.githubusercontent.com/50535bde4712ee43314133ad4ab9dba28374e54c/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3638343137353530323334303339303936332f3730323333393031383636363431303035352f756e6b6e6f776e2e706e673f77696474683d31333037266865696768743d363737"
+                             alt="Collabware" style="height: 100%; width: 100%; object-fit: cover" />
+
+                        <div style="display: flex; justify-content: center;">
+                            <a href="https://github.com/OmarIqbal395/UWB-Hacks-The-Cloud-2020" target="_blank" style="color:azure; font-size:30px;">Github Link</a>
+                        </div>
+
+                        <h3 style="font-size: 23px">Technolgy Used:</h3>
+                        <p style="font-size: 17px">
+                            Dart, Flutter Framework, Android Studio, Github.
+                        </p>
+                    </div>
+                    <br />
+
+                    <div class="w3-container" style="border: 1px solid antiquewhite;">
+                        <h2 id="PersonalWebsite" style="font-size: 30px; text-align: center;">
+                            My Personal Website <br />
+                        </h2>
+                        <p style="font-size: 25px; text-align: center;">HTML Webpage</p>
+                        <h3 style="font-size: 23px">Description:</h3>
+                        <p style="font-size: 17px">
+                            You are looking at it! A website made using HTML, CSS, and dry humour. The background color scheme reflected my own belief that
+                            as a software developer, looking at IDE in day mode is like staring at the sun at high noon.
+                        </p>
+
+                        <div style="display: flex; justify-content: center;">
+                            <a href="https://youtu.be/dQw4w9WgXcQ?autoplay=1" target="_blank" style="color:azure; font-size:30px;">Visit My Favorite Video!</a>
+                        </div>
+
+                        <h3 style="font-size: 23px">Technolgy Used:</h3>
+                        <p style="font-size: 17px">
+                            HTML5, CSS, Github.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="w3-container" style="float:right">
+                    <h2 style="font-size: 30px">Contact Info</h2>
+                    <p style="font-size: 17px">
+                        Phone: <a href="tel:2066431758" style="color:azure">206.643.1758</a>
+                        <br />
+                        Email: <a href="mailto:quan.nghiem2904@gmail.com?cc=quan117@uw.edu" style="color:azure">quan.nghiem2904@gmail.com</a>
+                        <br />
+                        Linkedin: <a href="https://www.linkedin.com/in/quannghiem/" target="_blank" style="color:azure">linkedin.com/in/quannghiem/</a>
+                        <br />
+                        Github: <a href="https://www.github.com/QuanNghiem/" target="_blank" style="color:azure">github.com/QuanNghiem</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
